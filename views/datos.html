@@ -1,0 +1,40 @@
+$def with(data) 
+<html>
+    <head>
+        <title> Detección de Cáncer mamario</title>
+    </head>
+    <body>
+        <b>
+            <font face="Corbel" size="4.5">
+             <a style="color:#FA6BF5" href="/"> Regresar </a>
+            </font>
+        </b>
+        <br>
+        <div align="center">
+            <table border="1" width="550">
+                <tr>
+                    <td align="center" width="140"> 
+                        <font face="Tw Cen MT" size="4"> Delegaciones </font>
+                    </td>
+                    <td align="center" width="130">
+                        <font face="Tw Cen MT" size="4"> Año 2015 </font>
+                    </td>
+                </tr>
+                <br>
+                <font face="Tw Cen MT">
+                    <h2 align="center" > Detección de Cáncer mamario, por delegación </h2>
+                </font>
+                </br>
+                $for row in data:
+                <tr>
+                    <td>
+                        <font face="Tw Cen MT" size="3"> $row['Delegaciones'] </font>
+                    </td>
+                    <td align="center">
+                        <font face="Tw Cen MT" size="3"> $row['2015'] </font>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </body>
+</html>
